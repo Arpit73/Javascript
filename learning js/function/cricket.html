@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bat ball stump game</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bat ball stump game</h1>
+    <button onclick="generateComputerChoice();
+    
+
+     let resultMsg;
+    if(computerChoice === 'Ball'){
+        resultMsg = ('User won');
+
+    }
+    else if (computerChoice === 'Bat') {
+        resultMsg = ('Draw');
+    }
+    else{
+        resultMsg = ('Computer Won');
+    }
+    alert(`You have chosen Bat.computer choice is ${computerChoice} and ${resultMsg} `);
+    ">Bat</button>
+
+
+
+    <button onclick="generateComputerChoice();
+    
+    
+
+      let resultMsg;
+    if(computerChoice === 'Ball'){
+        resultMsg = ('DRaw');
+
+    }
+    else if (computerChoice === 'Bat') {
+        resultMsg = ('Computer Won');
+    }
+    else{
+        resultMsg = ('user won');
+    }
+    alert(`You have chosen Ball.computer choice is ${computerChoice} and ${resultMsg} `);
+    ">Ball</button>
+
+
+
+    <button onclick="generateComputerChoice();
+    
+    
+
+      let resultMsg;
+ 
+    alert(`You have chosen Stump.computer choice is ${computerChoice} and ${resultMsg} `);
+    "
+    
+    
+    
+ >Stump</button>
+
+
+ <script>
+    
+
+    let computerChoice;
+    function generateComputerChoice(){
+        let randomNumber = Math.random()*3;
+    
+    if(randomNumber>0 && randomNumber<=1){
+         computerChoice = 'Bat';
+       
+    }
+    else if(randomNumber>1 && randomNumber<=2){
+         computerChoice = 'Ball';
+      
+        
+    }
+    else{
+         computerChoice ='Stump'
+        
+    }
+    }
+
+
+    function getResult(userMove,computerMove){
+        
+        if(userMove==='Bat'){
+            if(computerMove ==='Ball'){
+                return `user Won`
+
+            }
+            else if(computerMove === 'Bat'){
+                return `draw`
+            }
+            else{
+                return `computer won`;
+            }
+
+
+        }
+        else if(userMove ==='Ball'){
+            if(computerMove ==='Ball'){
+                return `Draw`
+
+            }
+            else if(computerMove === 'Bat'){
+                return `computer won`
+            }
+            else{
+                return `user won`;
+            }
+
+        }else{
+            if(computerMove ==='Ball'){
+                return `computer Won`
+
+            }
+            else if(computerMove === 'Bat'){
+                return `user won`
+            }
+            else{
+                return `draaw`;
+            }
+
+        }
+
+    }
+    
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn{
+        font-size: 20px;
+        height: 25px;
+        width: 100px;
+        background-color: orange;
+        border: none;
+        border-radius: 2px;
+    }
+    .js-size-double{
+        font-size: 40px;
+        height:50px;
+        width: 200px;
+    }
+</style>
+<body>
+    <button class="btn" ">Arpit</button>
+    
+
+
+    <script>
+        // let printgreeting = () => console.log('Namaste');
+        // let runTwice = inputfunction =>{
+        //     inputfunction();
+        //     inputfunction();
+        // }
+        
+        // runTwice(printgreeting);
+        let buttonElement = document.querySelector('.btn');
+        buttonElement.addEventListener('click', event =>{
+            setTimeout(doubleTheSize,2000);
+        })
+
+
+
+
+
+
+
+        function doubleTheSize(){
+            let buttonElement = document.querySelector('.btn');
+            buttonElement.classList.add('js-size-double');
+        }
+
+    </script>
+</body>
+</html>
